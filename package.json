@@ -9,7 +9,8 @@
   "author": "Hijos de Garza",
   "license": "ISC",
   "dependencies": {
-    "electron": "^3.0.0"
+    "electron": "^3.0.0",
+    "vue": "^2.5.17"
   },
   "devDependencies": {
     "bootstrap": "^4.1.3",

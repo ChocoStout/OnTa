@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <title>OnTa - Busco algo!</title>
+</head>
+<body>
+    <div id="navbar">
+        <!--Espacio para navbar-->
+    </div>
+    <div>
+            <div class="container">
+                <h1>Ingresa los datos del articulo y tus datos</h1>
+                <div class="form-group">
+                    <label for="Nombre">Tu nombre</label>
+                    <input type="text" name="Nombre" id="txt_NombreBusquedas" value="" placeholder="Nombre" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="Correo">Contacto</label>
+                    <input type="text" name="FormaContacto" id="txt_ContactoBusquedas" value="" placeholder="Forma de contactarte" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="Objeto">Objeto que buscas</label>
+                    <input type="text" name="ObjetoBusqueda" id="ObjetoBusqueda" value="" placeholder="¿Que objeto buscas?" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" id="agregarBusqueda">Agregar</button>
+                </div>
+                <div id="lista-contactos">
+                    <table class="table-bordered table-hover" id="tabla-Busquedas">
+                        <tr>
+                            <th class="col">ID</th>
+                            <th class="col">Nombre</th>
+                            <th class="col">Forma de contacto</th>
+                            <th class="col">Objeto que busca</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    </div>
+</body>
+<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../../node_modules/popper.js/dist/popper.min.js"></script>
+<script src="../../node_modules/vue/dist/vue.min.js"></script>
+<script src="../JavaScript/main.js""></script>
+</html>
