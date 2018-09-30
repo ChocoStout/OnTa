@@ -1,15 +1,17 @@
 {
-  "name": "findit",
+  "name": "onta",
   "version": "1.0.0",
-  "description": "FindIT",
+  "description": "onta",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Hijos de Garza",
   "license": "ISC",
+  "private": true,
   "dependencies": {
     "electron": "^3.0.0",
+    "electron-packager": "^12.1.2",
     "vue": "^2.5.17"
   },
   "devDependencies": {

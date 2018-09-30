@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <title>OnTa - Encontre algo!</title>
+</head>
+<body>
+    <div id="navbar">
+        <!--Espacio para navbar-->
+    </div>
+    <div class="container-fluid" style="margin-top:80px">
+            <div class="container">
+                <h1>Ingresa los datos del articulo</h1>
+                <div class="form-group">
+                    <label for="Correo">Contacto</label>
+                    <input type="text" name="FormaContacto" id="txt_Contactofind" value="" placeholder="Forma de contactarte" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="Objeto">Objeto que encontraste</label>
+                    <input type="text" name="Objetofind" id="Objetofind" value="" placeholder="¿Que objeto encontraste?" class="form-control">
+                </div>
+                <div class="form-group" id="selectBuscar">
+                    <label for="selectCiudad">Ciudad en la que se buscara:</label>
+                    <select class="form-control" id="selectCiudad" name="selectCiudad">
+                        <option value="Torreon">Torreon</option>
+                        <option value="Gomez-Palacio">Gomez Palacio</option>
+                        <option value="Lerdo">Lerdo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" id="agregarfind">Agregar</button>
+                </div>
+                <div id="lista-cosas">
+                    <table class="table-bordered table-hover" id="tabla-find">
+                        <tr>
+                            <th class="col">ID</th>
+                            <th class="col">Nombre</th>
+                            <th class="col">Forma de contacto</th>
+                            <th class="col">Objeto que encontro</th>
+                            <th class="col">Ciudad en la que se encontro</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    </div>
+</body>
+<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../../node_modules/popper.js/dist/popper.min.js"></script>
+<script src="../../node_modules/vue/dist/vue.min.js"></script>
+<script src="../JavaScript/main.js""></script>
