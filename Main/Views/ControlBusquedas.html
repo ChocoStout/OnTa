@@ -12,31 +12,36 @@
     <div id="navbar">
         <!--Espacio para navbar-->
     </div>
-    <div>
+    <div class="container-fluid" style="margin-top:80px">
             <div class="container">
-                <h1>Ingresa los datos del articulo y tus datos</h1>
-                <div class="form-group">
-                    <label for="Nombre">Tu nombre</label>
-                    <input type="text" name="Nombre" id="txt_NombreBusquedas" value="" placeholder="Nombre" class="form-control" required>
-                </div>
+                <h1>Ingresa los datos del articulo</h1>
                 <div class="form-group">
                     <label for="Correo">Contacto</label>
                     <input type="text" name="FormaContacto" id="txt_ContactoBusquedas" value="" placeholder="Forma de contactarte" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label for="Objeto">Objeto que buscas</label>
-                    <input type="text" name="ObjetoBusqueda" id="ObjetoBusqueda" value="" placeholder="¿Que objeto buscas?" class="form-control">
+                    <input type="text" name="ObjetoBusqueda" id="ObjetoBusquedas" value="" placeholder="¿Que objeto buscas?" class="form-control">
+                </div>
+                <div class="form-group" id="selectBuscar">
+                        <label for="selectCiudad">Ciudad en la que se buscara:</label>
+                        <select class="form-control" id="selectCiudad" name="selectCiudad">
+                            <option value="Torreon">Torreon</option>
+                            <option value="Gomez-Palacio">Gomez Palacio</option>
+                            <option value="Lerdo">Lerdo</option>
+                        </select>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-primary" id="agregarBusqueda">Agregar</button>
                 </div>
-                <div id="lista-contactos">
+                <div id="lista-cosas">
                     <table class="table-bordered table-hover" id="tabla-Busquedas">
                         <tr>
                             <th class="col">ID</th>
                             <th class="col">Nombre</th>
                             <th class="col">Forma de contacto</th>
                             <th class="col">Objeto que busca</th>
+                            <th class="col">Ciudad en la que se busca</th>
                         </tr>
                     </table>
                 </div>

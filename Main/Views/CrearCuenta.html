@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <title>OnTa?</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <!--Espacio para el navbar-->
+    </div>
+    <div class="container-fluid" style="margin-top:80px">
+        <form id="registerForm" action="index.html">
+            <h2>Registra tu cuenta</h2>
+            <p>
+                <label for="username">Nombre De Usuario</label>
+                <input id="username" name="username" type="text" placeholder="ej: TonyStark" value="" required>
+            </p>
+            <p>
+                <label for="firstName">Nombres</label>
+                <input id="firstName" name="firstName" type="text" placeholder="ej: Tony" value="" required>
+            </p>
+            <p>
+                <label for="lastName">Apellidos</label>
+                <input id="lastName" name="lastName" type="text" placeholder="ej: Stark" value="" required>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="ej: tonystark@gmail.com" value="" required>
+            </p>
+            <p>
+                <label for="email2">Confirma email</label>
+                <input id="email2" name="email2" type="email" placeholder="ej: tonystark@gmail.com" value=""required>
+            </p>
+            <p>
+                <label for="password">Contraseña</label>
+                <input id="password" name="password" type="password" placeholder="Tu contraseña" value="" required>
+            </p>
+            <p>
+                <label for="password2">Confirma contraseña</label>
+                <input id="password2" name="password2" type="password" placeholder="Tu contraseña" value="" required>
+            </p>
+            <div class="btn-group">
+                <a href="IniciarSesion.html"><button type="button" class="btn btn-basic btn-lg">Iniciar sesion</button></a>
+            </div>
+            <div class="btn-group">
+                <a href="index.html"><button type="button" class="btn btn-success btn-lg">Crear cuenta</button></a>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../../node_modules/popper.js/dist/popper.min.js"></script>
+<script src="../../node_modules/vue/dist/vue.min.js"></script>
+<script src="../JavaScript/main.js""></script>
